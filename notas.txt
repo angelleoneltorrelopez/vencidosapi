@@ -1,0 +1,26 @@
+correr el servidor
+node src/app.js
+
+rest client
+Content-Type: application/json
+
+GET ejemplo en productos: //select all
+http://localhost:3000/productos
+------------------------------------------------------------
+
+POST ejemplo en productos: //insertar
+http://localhost:3000/productos
+{
+"nombre_productos": "prueba"
+}
+----------------------------------------------------------
+
+PUT ejemplo en productos: //update
+http://localhost:3000/productos/8359
+
+{
+        "nombre_productos": "prueba update"
+}
+
+DELETE ejemplo productos: //Eliminar
+http://localhost:3000/productos/8359
